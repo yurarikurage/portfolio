@@ -1,4 +1,37 @@
 /*
+マウスストーカー
+================================================ */
+const mouseStalker = document.getElementById('mouseStalker');
+let msPos = {
+  // マウスストーカーの位置
+  s: {
+    x: document.documentElement.clientWidth / 2,
+    y: document.documentElement.clientHeight / 2
+  },
+  // マウスポインターの位置
+  m: {
+    x: document.documentElement.clientWidth / 2,
+    y: document.documentElement.clientHeight / 2
+  }
+};
+// マウスポインターの位置取得
+document.addEventListener('mousemove', function(e){
+  msPos.m.x = e.clientX;
+  msPos.m.y = e.clientY;
+});
+// アニメーション開始
+requestAnimationFrame(msPosUpdate);
+// マウスストーカーを動かす関数
+function msPosUpdate() {
+  msPos.s.x += (msPos.m.x - msPos.s.x) * 0.1;
+  msPos.s.y += (msPos.m.y - msPos.s.y) * 0.1;
+  const x = Math.round(msPos.s.x * 10) / 10;
+  const y = Math.round(msPos.s.y * 10) / 10;
+  mouseStalker.style.transform = `translate3d(` + x + 'px,' + y + 'px, 0)';
+  requestAnimationFrame(msPosUpdate);
+}
+
+/*
 ローディングから画面遷移
 ================================================ */
 const loadingAreaGrey = document.querySelector('#loading');
@@ -74,6 +107,35 @@ window.addEventListener('load', () => {
 });
 
 /*
+ナビゲーションメニュー
+================================================ */
+const menuBtn = document.querySelector('.menuBtn');
+const menuBack = document.querySelector('.menuBack');
+const menuNav = document.querySelector('#nav');
+const activeDel = document.querySelectorAll('.active');
+const menuOptions = {
+  duration: 1400,
+  easing: 'ease',
+  fill: 'forwards',
+};
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  menuBack.classList.toggle("active");
+  // menuNav.classList.toggle("active");
+  // menuBack.animate({translate: ['100vw', 0]}, menuOptions);
+});
+
+console.log(window.innerWidth);
+
+if (window.innerWidth <= 1000) {
+  console.log(window.innerWidth);
+  activeDel.forEach(() => {
+    activeDel.classList.remove("active");
+  });
+}
+
+/*
 バナーギャラリー
 ================================================ */
 const bannerMain = document.querySelector('.bannerMain img');
@@ -92,7 +154,7 @@ bannerImage.forEach((bannerImage) => {
 const animateLine = (entries, obs) => {
   entries.forEach((entry) => {
     // console.log(entry);
-    console.log(lineElements);
+    // console.log(lineElements);
     if(entry.isIntersecting) {
       lineElements.forEach((lineElement) => {
         lineElement.classList.add("lineSkill");
@@ -136,4 +198,3 @@ const fadeElements = document.querySelectorAll('.fadein');
 fadeElements.forEach((fadeElement) => {
   fadeObserver.observe(fadeElement);
 });
-
