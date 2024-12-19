@@ -122,7 +122,7 @@ const menuOptions = {
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   menuBack.classList.toggle("active");
-  // menuNav.classList.toggle("active");
+  menuNav.classList.toggle("active");
   // menuBack.animate({translate: ['100vw', 0]}, menuOptions);
 });
 

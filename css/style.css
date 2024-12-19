@@ -103,7 +103,7 @@ body {
 #header {
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -140,6 +140,7 @@ body {
   height: 50px;
   cursor: pointer;
   margin: 20px;
+  z-index: 10;
 }
 .menuBtn span {
   display: inline-block;
@@ -180,7 +181,7 @@ body {
   height: 100vh;
   background-color: rgba(138, 208, 255, 0.7);
   transform: translateY(-100vh);
-  transition: all .3s linear;
+  transition: .3s;
   opacity: 0;
 }
 .menuBack.active {
@@ -190,6 +191,7 @@ body {
 
 /* ナビゲーションメニュー */
 #nav {
+  z-index: 10;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -294,9 +296,6 @@ body {
   padding-right: 2vw;
   width: 150rem;
 }
-.webText h3 {
-  /* font-size: 1.5em; */
-}
 
 /* バナー */
 #worksBanner {
@@ -351,9 +350,6 @@ body {
 #profile {
   padding: 150px 0;
 }
-#profile h3 {
-  /* font-size: 1.5em; */
-}
 .intro {
   max-width: 900px;
   margin: 0 auto 30px;
@@ -377,9 +373,6 @@ body {
 }
 
 /* スキル */
-.skill {
-  /* margin-top: 20px; */
-}
 #skillSpace {
   display: flex;
   flex-wrap: wrap;
@@ -499,6 +492,33 @@ body {
   }
   #nav {
     display: none;
+    opacity: 0;
+  }
+  #nav.active {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 15%;
+    align-items: center;
+    transition: .4s;
+    opacity: 1;
+  }
+  #nav.active ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-wrap: nowrap;
+    font-size: 2rem;
+  }
+  #nav.active ul li {
+    width: auto;
+    margin-bottom: 15px;
+    text-align: center;
   }
   #mainText {
     font-size: 10vw;
