@@ -1,4 +1,171 @@
 /*
+データベース（連想配列）
+================================================ */
+// デザインされた作品一覧
+const designList = [
+  {
+    title: "由良李海月のポートフォリオ",
+    img: "24877818.png",
+    tag: "website",
+    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    concept: "今見てるこのサイト。これからどんどんリニューアルするよ！",
+    time: "3時間",
+  },
+  {
+    title: "タイトル",
+    img: "24877818.png",
+    tag: "website",
+    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    time: "3時間",
+    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  },
+  {
+    title: "タイトル",
+    img: "24877818.png",
+    tag: "website",
+    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    time: "3時間",
+    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  },
+  {
+    title: "タイトル",
+    img: "24877818.png",
+    tag: "website",
+    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    time: "3時間",
+    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  },
+  {
+    title: "タイトル",
+    img: "24877818.png",
+    tag: "website",
+    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    time: "3時間",
+    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  },
+  {
+    title: "バナー",
+    img: "banner_image1.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image2.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image3.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image4.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image5.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image6.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image7.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+  {
+    title: "バナー",
+    img: "banner_image8.jpg",
+    tag: "banner",
+    tool: "Photoshop/illustrator/CLIP STUDIO",
+    time: "3時間",
+    concept: "コンセプトをここに書く。",
+  },
+];
+
+// スキル一覧
+const skillList = [
+  {
+    title: "Webサイト",
+    level: "70",
+  },
+  {
+    title: "Photoshop",
+    level: "60",
+  },
+  {
+    title: "illustrator",
+    level: "50",
+  },
+  {
+    title: "Word",
+    level: "90",
+  },
+  {
+    title: "Excel",
+    level: "90",
+  },
+  {
+    title: "PowerPoint",
+    level: "90",
+  },
+];
+
+// SNS一覧
+const snsList = [
+  {
+    title: "X",
+    url: "url",
+  },
+  {
+    title: "pixiv",
+    url: "url",
+  },
+  {
+    title: "FANBOX",
+    url: "url",
+  },
+  {
+    title: "skeb",
+    url: "url",
+  },
+  {
+    title: "ココナラ",
+    url: "url",
+  },
+];
+
+console.log(designList);
+console.log(skillList);
+console.log(snsList);
+
+/*
 マウスストーカー
 ================================================ */
 const mouseStalker = document.getElementById('mouseStalker');
