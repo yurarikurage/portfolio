@@ -11,7 +11,6 @@
 <body>
     <!-- マウスストーカー -->
     <div id="mouseStalker">
-        <!-- <div id="mouseStalkerImg"></div> -->
         <img id="mouseStalkerImg" src="./images/stalker.png" alt="">
     </div>
 
@@ -30,12 +29,14 @@
             <!-- <a href="#"><img class="logo" src="../assets/images/25327386.png" alt="logo"></a> -->
         </div>
 
-        <!-- ナビゲーションメニュー -->
+        <!-- ハンバーガーメニュー -->
         <span class="menuBtn">
             <span></span>
             <span></span>
             <span></span>
         </span>
+
+        <!-- ナビゲーションメニュー -->
         <nav id="nav">
             <ul>
                 <li><a href="#worksWeb">Webサイト</a></li>
@@ -46,36 +47,35 @@
         <div class="menuBack"></div>
     </header>
 
-
     <!-- メイン -->
-    <div id="main">
+    <section id="main">
         <div id="mainVisual"></div>
         <h1 id="mainText">YURARI KURAGE</h1>
         <p>由良李海月のポートフォリオだよ</p>
-    </div>
-    <div class="headerWave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
-            <path fill="#cfecff" id="wave0" d="M0,0H100V1C50.17,1,50,8,0,8V0Z">
-            <animate attributeType="XML" 
-            attributeName="d" 
-            dur="10s" 
-            repeatCount="indefinite" 
-            values="
-                M0,0H100V1C50.17,1,50,8,0,8V0Z;
-                M0,0H100V4.42C49.92,10,49.92,10,0,4.5V0Z;
-                M0,0H100V8C50.17,8,50,1,0,1V0Z;
-                M0,0H100V4.5C50,0,50,0,0,4.5V0Z;
-                M0,0H100V1C50.17,1,50,8,0,8V0Z
-                "/>
-            </path>
-        </svg>
-    </div>
+        <div class="headerWave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path fill="#cfecff" id="wave0" d="M0,0H100V1C50.17,1,50,8,0,8V0Z">
+                <animate attributeType="XML" 
+                attributeName="d" 
+                dur="10s" 
+                repeatCount="indefinite" 
+                values="
+                    M0,0H100V1C50.17,1,50,8,0,8V0Z;
+                    M0,0H100V4.42C49.92,10,49.92,10,0,4.5V0Z;
+                    M0,0H100V8C50.17,8,50,1,0,1V0Z;
+                    M0,0H100V4.5C50,0,50,0,0,4.5V0Z;
+                    M0,0H100V1C50.17,1,50,8,0,8V0Z
+                    "/>
+                </path>
+            </svg>
+        </div>
+    </section>
 
-    <!-- ワークス_ウェブサイト -->
-    <div id="worksWeb">
+    <!-- ウェブサイト -->
+    <section id="webWorks">
         <h2 class="title">作成したWebサイト</h2>
         <div id="webSpace" class="space">
-            <div class="web fadein">
+            <!-- <div class="web fadein">
                 <div class="webEyecatch"><img src="images/24877818.png" alt=""></div>
                 <div class="webText">
                     <h3 class="h3">由良李海月のポートフォリオ</h3>
@@ -102,51 +102,51 @@
                     <h3 class="h3">タイトル</h3>
                     <p class="text">簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明</p>    
                 </div>
-            </div>
+            </div> -->
         </div>
-    </div>
+    </section>
 
-    <!-- ワークス_バナー -->
-    <div id="worksBanner">
+    <!-- ワークス_デザイン -->
+    <section id="designWorks">
         <h2 class="title">作成したバナー</h2>
-        <div id="bannerSpace" class="space fadein">
-            <div class="bannerEyecatch">
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image1.jpg" alt=""></div>
+        <div id="designSpace" class="space fadein">
+            <div class="designEyecatch">
+                <!-- <div class="design">
+                    <div class="designImage"><img src="images/banner_image1.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image2.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image2.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image3.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image3.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image4.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image4.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image5.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image5.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image6.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image6.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image7.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image7.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image8.jpg" alt=""></div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image8.jpg" alt=""></div>
                 </div>
-                <div class="banner">
-                    <div class="bannerImage"><img src="images/banner_image9.jpg" alt=""></div>
-                </div>
+                <div class="design">
+                    <div class="designImage"><img src="images/banner_image9.jpg" alt=""></div>
+                </div> -->
             </div>
-            <div class="bannerMain">
+            <div class="designMain">
                 <img src="images/banner_image1.jpg" alt="">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- 自分について -->
-    <div id="profile">
+    <section id="profile">
         <h2 class="title">自分について</h2>
         <div id="profileSpace" class="space">
             <div class="intro fadein">
@@ -159,18 +159,18 @@
                     <p class="text">日々成長することを忘れないように、興味があることにはとことん勉強しています。まだまだ、"できない"ことが沢山ありますが、それらを"できる"ようになるために多くのことを体験したいです！</p>
                 </div>
             </div>
-            <div class="skill fadein">
+            <div>
                 <h3 class="h3">できること</h3>
-                <div id="skillSpace" class="skill">
-                    <div class="percent">
+                <div id="skillSpace">
+                    <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
-                            <circle class="line lineSkill1" cx="100" cy="100" r="80"></circle>
+                            <circle class="line lineSkill10" cx="100" cy="100" r="80"></circle>
                         </svg>
                         <div class="skillLevel"><p>70<span>%</span></p></div>
                         <div class="skillTitle"><p>Webデザイン</p></div>
                     </div>
-                    <div class="percent">
+                    <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
                             <circle class="line lineSkill2" cx="100" cy="100" r="80"></circle>
@@ -178,7 +178,7 @@
                         <div class="skillLevel"><p>60<span>%</span></p></div>
                         <div class="skillTitle"><p>Photoshop</p></div>
                     </div>
-                    <div class="percent">
+                    <!-- <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
                             <circle class="line lineSkill3" cx="100" cy="100" r="80"></circle>
@@ -186,7 +186,7 @@
                         <div class="skillLevel"><p>50<span>%</span></p></div>
                         <div class="skillTitle"><p>illustrator</p></div>
                     </div>
-                    <div class="percent">
+                    <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
                             <circle class="line lineSkill4" cx="100" cy="100" r="80"></circle>
@@ -194,7 +194,7 @@
                         <div class="skillLevel"><p>90<span>%</span></p></div>
                         <div class="skillTitle"><p>Word</p></div>
                     </div>
-                    <div class="percent">
+                    <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
                             <circle class="line lineSkill5" cx="100" cy="100" r="80"></circle>
@@ -202,18 +202,18 @@
                         <div class="skillLevel"><p>90<span>%</span></p></div>
                         <div class="skillTitle"><p>Excel</p></div>
                     </div>
-                    <div class="percent">
+                    <div class="skill">
                         <svg>
                             <circle class="base" cx="100" cy="100" r="80"></circle>
-                            <circle class="line lineSkill6" cx="100" cy="100" r="80"></circle>
+                            <circle class="line lineSkill70 lineSkill" cx="100" cy="100" r="80"></circle>
                         </svg>
                         <div class="skillLevel"><p>90<span>%</span></p></div>
                         <div class="skillTitle"><p>PowerPoint</p></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- フッター -->
     <div class="footerWave">

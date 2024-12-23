@@ -303,21 +303,178 @@ if (window.innerWidth <= 1000) {
 }
 
 /*
-バナーギャラリー
+ウェブサイトギャラリー
 ================================================ */
-const bannerMain = document.querySelector('.bannerMain img');
-const bannerImage = document.querySelectorAll('.bannerImage img');
+const webSpace = document.querySelector('#webSpace');
+const designSpace = document.querySelector('#designSpace .designEyecatch');
 
-bannerImage.forEach((bannerImage) => {
-  bannerImage.addEventListener('mouseover', (event) => {
-    bannerMain.src = event.target.src;
-    bannerMain.animate({opacity: [0, 1]}, 500);
+designList.forEach((designList) => {
+  if (designList['tag'] == "website") {
+    inWeb(designList);
+  } else {
+    inDesign(designList);
+  }
+});
+
+// ウェブサイトリスト
+function inWeb(web) {
+  // タグ追加
+  const divWeb = document.createElement('div');
+  const webEyecatch = document.createElement('div');
+  const webText = document.createElement('div');
+  const img = document.createElement('img');
+  const title = document.createElement('h3');
+  const tag = document.createElement('p');
+  const tool = document.createElement('p');
+  const concept = document.createElement('p');
+  const time = document.createElement('p');
+  const imgsrc = `images/${web['img']}`;
+
+  // 要素追加
+  divWeb.classList.add("web", "fadein");
+  webEyecatch.classList.add("webEyecatch");
+  img.setAttribute('src', imgsrc);
+  img.setAttribute('alt', web['title']);
+  webText.classList.add("webText");
+  title.classList.add("h3");
+  tag.classList.add("text");
+  tool.classList.add("text");
+  concept.classList.add("text");
+  time.classList.add("text");
+
+  title.textContent = web['title'];
+  tag.textContent = web['tag'];
+  tool.textContent = web['tool'];
+  concept.textContent = web['concept'];
+  time.textContent = web['time'];
+
+  // DOM追加
+  divWeb.appendChild(webEyecatch);
+  webEyecatch.appendChild(img);
+  divWeb.appendChild(webText);
+  webText.appendChild(title);
+  webText.appendChild(tag);
+  webText.appendChild(tool);
+  webText.appendChild(concept);
+  webText.appendChild(time);
+
+  webSpace.appendChild(divWeb);
+  // console.log(divWeb);
+};
+
+// デザインリスト
+function inDesign(design) {
+  // タグ追加
+  const divDesign = document.createElement('div');
+  const designImage = document.createElement('div');
+  const designText = document.createElement('div');
+  const img = document.createElement('img');
+  const title = document.createElement('h3');
+  const tag = document.createElement('p');
+  const tool = document.createElement('p');
+  const concept = document.createElement('p');
+  const time = document.createElement('p');
+  const imgsrc = `images/${design['img']}`;
+
+  // 要素追加
+  divDesign.classList.add("design");
+  designImage.classList.add("designImage");
+  img.setAttribute('src', imgsrc);
+  img.setAttribute('alt', design['title']);
+  designText.classList.add("webText");
+  title.classList.add("h3");
+  tag.classList.add("text");
+  tool.classList.add("text");
+  concept.classList.add("text");
+  time.classList.add("text");
+
+  // title.textContent = design['title'];
+  // tag.textContent = design['tag'];
+  // tool.textContent = design['tool'];
+  // concept.textContent = design['concept'];
+  // time.textContent = design['time'];
+
+  // DOM追加
+  divDesign.appendChild(designImage);
+  designImage.appendChild(img);
+  divDesign.appendChild(designText);
+  // webText.appendChild(title);
+  // webText.appendChild(tag);
+  // webText.appendChild(tool);
+  // webText.appendChild(concept);
+  // webText.appendChild(time);
+
+  designSpace.appendChild(divDesign);
+  // console.log(divDesign);
+};
+
+
+/*
+デザインギャラリー
+================================================ */
+const designMain = document.querySelector('.designMain img');
+const designImage = document.querySelectorAll('.designImage img');
+
+designImage.forEach((designImage) => {
+  designImage.addEventListener('mouseover', (event) => {
+    designMain.src = event.target.src;
+    designMain.animate({opacity: [0, 1]}, 500);
   });
 });
 
 /*
 スキル
 ================================================ */
+const skillSpace = document.querySelector('#skillSpace');
+
+skillList.forEach((skillList) => {
+  inSkill(skillList);
+});
+
+// ウェブサイトリスト
+function inSkill(skill) {
+  // タグ追加
+  const divSkill = document.createElement('div');
+  const skillLevel = document.createElement('div');
+  const skillTitle = document.createElement('div');
+  const circleBase = document.createElement('circle');
+  const circleLine = document.createElement('circle');
+  const svg = document.createElement('svg');
+  const span = document.createElement('span');
+  const title = document.createElement('p');
+  const level = document.createElement('p');
+
+  // 要素追加
+  divSkill.classList.add("skill");
+  circleBase.classList.add("base");
+  circleBase.setAttribute('cx', "100");
+  circleBase.setAttribute('cy', "100");
+  circleBase.setAttribute('r', "80");
+  circleLine.classList.add("line", `lineSkill${skill['level']}`);
+  circleLine.setAttribute('cx', "100");
+  circleLine.setAttribute('cy', "100");
+  circleLine.setAttribute('r', "80");
+  skillLevel.classList.add("skillLevel");
+  skillTitle.classList.add("skillTitle");
+
+  title.textContent = skill['title'];
+  level.textContent = skill['level'];
+  span.textContent = "%";
+
+  // DOM追加
+  divSkill.appendChild(svg);
+  svg.appendChild(circleBase);
+  svg.appendChild(circleLine);
+  divSkill.appendChild(skillLevel);
+  divSkill.appendChild(skillTitle);
+  skillLevel.appendChild(level);
+  skillTitle.appendChild(title);
+  level.appendChild(span);
+
+  skillSpace.appendChild(divSkill);
+  console.log(divSkill);
+};
+
 const animateLine = (entries, obs) => {
   entries.forEach((entry) => {
     // console.log(entry);
@@ -329,6 +486,7 @@ const animateLine = (entries, obs) => {
     }
   });
 };
+
 const lineObaerver = new IntersectionObserver(animateLine);
 const lineElements = document.querySelectorAll('.line');
 lineElements.forEach((lineElement) => {
@@ -350,7 +508,7 @@ const animateFade = (entries, obs) => {
           // rotate: ['z 5deg', 0],
         },
         {
-          duration: 2000,
+          duration: 1200,
           easing: 'ease',
           fill: 'forwards',
         }

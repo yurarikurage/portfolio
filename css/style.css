@@ -14,6 +14,36 @@ body {
   font-family: 'Yu Gothic', sans-serif;
   color: var(--text-color);
 }
+.title {
+  max-width: 1280px;
+  margin: 0 auto 100px;
+  position: relative;
+  padding-left: 220px;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50px;
+  width: 150px;
+  height: 2px;
+  background-color: var(--text-color);
+}
+.h3 {
+  font-size: 1.5em;
+}
+.text {
+  font-size: 1em;
+}
+.space {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 
 
 /* マウスストーカー */
@@ -213,7 +243,6 @@ body {
   transition: 0.3s;
 }
 
-
 /* メインヴィジュアル */
 #mainVisual {
   height: 100vh;
@@ -235,47 +264,17 @@ body {
   font-size: 5vw;
   margin: 0;
 }
-@keyframes jfchange{
-0% {filter:hue-rotate(0deg);}
-25% {filter:hue-rotate(90deg);}
-50% {filter:hue-rotate(180deg);}
-75% {filter:hue-rotate(270deg);}
-100% {filter:hue-rotate(360deg);}
-}
-
-/* 各タイトル */
-.title {
-  max-width: 1280px;
-  margin: 0 auto 100px;
-  position: relative;
-  padding-left: 220px;
-  font-size: 2em;
-  letter-spacing: 0.2em;
-}
-.title::before {
-  content: "";
-  position: absolute;
-  top: 45%;
-  left: 50px;
-  width: 150px;
-  height: 2px;
-  background-color: var(--text-color);
-}
-.h3 {
-  font-size: 1.5em;
-}
-.text {
-  font-size: 1em;
-}
-
-/* スペース */
-.space {
-  margin: 0 auto;
-  max-width: 1280px;
-  padding: 0 20px;
+@keyframes jfchange {
+  0% {filter:hue-rotate(0deg);}
+  25% {filter:hue-rotate(90deg);}
+  50% {filter:hue-rotate(180deg);}
+  75% {filter:hue-rotate(270deg);}
+  100% {filter:hue-rotate(360deg);}
 }
 
 /* ウェブサイト */
+#webWorks {
+}
 .web {
   display: flex;
   justify-content: space-between;
@@ -298,53 +297,55 @@ body {
   width: 150rem;
 }
 
-/* バナー */
-#worksBanner {
+/* デザイン */
+#designWorks {
   background-color: var(--sub-color);
   padding: 150px 0;
 }
-.bannerEyecatch {
+.designEyecatch {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   overflow-x: scroll;
 }
-.bannerEyecatch::-webkit-scrollbar {
+.designEyecatch::-webkit-scrollbar {
   background-color: var(--sub-color);
   border-radius: 5px;
 }
-.bannerEyecatch::-webkit-scrollbar-thumb {
+.designEyecatch::-webkit-scrollbar-thumb {
   background-color: var(--accent-color);
   border-radius: 5px;
 }
-.banner {
+.design {
   min-width: 100px;
   width: 100px;
   height: 100px;
   padding: 10px;
 }
-.bannerImage {
+.designImage {
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner img {
+.design img {
   display: block;
   max-width: 100%;
   max-height: 100px;
   object-fit: contain;
   box-shadow: 0 5px 10px 0 rgba(32, 53, 39, 0.3);
 }
-.banner img:hover {
+.design img:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
-.bannerMain {
+.designMain {
   margin-top: 10px;
+  text-align: center;
 }
-.bannerMain img {
+.designMain img {
   width: 100%;
+  max-width: 900px;
 }
 
 /* 自分について */
@@ -379,18 +380,18 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.percent {
+.skill {
   position: relative;
   min-width: 200px;
 }
-.percent svg {
+.skill svg {
   position: relative;
   width: 200px;
   height: 200px;
   transform: rotate(-90deg);
 }
 /* 直径160*3.15=502 */
-.percent svg circle {
+.skill svg circle {
   position: relative;
   fill: none;
   stroke-width: 20;
@@ -398,36 +399,45 @@ body {
   stroke-dasharray: 502;
   stroke-dashoffset: 0;
   stroke-linecap: round;
+  cx: 100;
+  cy: 100;
+  r: 80;
 }
-.percent svg circle.line {
+.skill svg circle.line {
   /* stroke: var(--accent-color); */
   /* animation: circleAnim 1s forwards; */
 }
-.percent svg circle.lineSkill {
+.skill svg circle.lineSkill {
   stroke: var(--accent-color);
   animation: circleAnim 1s forwards;
   /* animation-delay: 1s; */
 }
-.percent svg circle.lineSkill1 {
-  stroke-dashoffset: calc(502 - (502 * 70) / 100);
+.skill svg circle.lineSkill10 {
+  stroke-dashoffset: calc(502 - (502 * 10) / 100);
 }
-.percent svg circle.lineSkill2 {
-  stroke-dashoffset: calc(502 - (502 * 60) / 100);
+.skill svg circle.lineSkill20 {
+  stroke-dashoffset: calc(502 - (502 * 20) / 100);
 }
-.percent svg circle.lineSkill3 {
+.skill svg circle.lineSkill30 {
+  stroke-dashoffset: calc(502 - (502 * 30) / 100);
+}
+.skill svg circle.lineSkill40 {
+  stroke-dashoffset: calc(502 - (502 * 40) / 100);
+}
+.skill svg circle.lineSkill50 {
   stroke-dashoffset: calc(502 - (502 * 50) / 100);
 }
-.percent svg circle.lineSkill4 {
-  stroke-dashoffset: calc(502 - (502 * 90) / 100);
+.skill svg circle.lineSkill60 {
+  stroke-dashoffset: calc(502 - (502 * 60) / 100);
 }
-.percent svg circle.lineSkill5 {
-  stroke-dashoffset: calc(502 - (502 * 90) / 100);
+.skill svg circle.lineSkill70 {
+  stroke-dashoffset: calc(502 - (502 * 70) / 100);
 }
-.percent svg circle.lineSkill6 {
-  stroke-dashoffset: calc(502 - (502 * 90) / 100);
+.skill svg circle.lineSkill80 {
+  stroke-dashoffset: calc(502 - (502 * 80) / 100);
 }
-.percent svg circle.lineSkill7 {
-  stroke-dashoffset: calc(502 - (502 * 10) / 100);
+.skill svg circle.lineSkill90 {
+  stroke-dashoffset: calc(502 - (502 * 90) / 100);
 }
 .skillLevel {
   position: absolute;
@@ -552,3 +562,12 @@ body {
 
 }
 
+/* ホバーアクションをPCだけにしたい場合、←のメディアクエリで囲む */
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    /* opacity: 0.7 */
+  }
+  #mouseStalker {
+    /* display: none; */
+  }
+}
