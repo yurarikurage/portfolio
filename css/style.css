@@ -11,7 +11,7 @@ body {
   background-color: var(--base-color);
   padding: 0;
   margin: 0;
-  font-family: 'Yu Gothic', sans-serif;
+  font-family: 'YakuHanJP_Narrow', 'Zen Kaku Gothic New', 'Yu Gothic', sans-serif;
   color: var(--text-color);
 }
 .title {
@@ -19,7 +19,7 @@ body {
   margin: 0 auto 100px;
   position: relative;
   padding-left: 220px;
-  font-size: 2em;
+  font-size: xx-large;
   letter-spacing: 0.2em;
 }
 .title::before {
@@ -32,10 +32,14 @@ body {
   background-color: var(--text-color);
 }
 .h3 {
-  font-size: 1.5em;
+  font-size: x-large;
 }
 .text {
-  font-size: 1em;
+  font-size: medium;
+}
+.omake {
+  color: var(--main-color);
+  font-size: small;
 }
 .space {
   max-width: 1280px;
@@ -273,8 +277,6 @@ body {
 }
 
 /* ウェブサイト */
-#webWorks {
-}
 .web {
   display: flex;
   justify-content: space-between;
@@ -296,6 +298,11 @@ body {
   padding-right: 2vw;
   width: 150rem;
 }
+.webText span {
+  color: var(--accent-color);
+  font-size: small;
+}
+
 
 /* デザイン */
 #designWorks {
@@ -339,6 +346,9 @@ body {
   opacity: 0.5;
   transition: 0.3s;
 }
+.designText {
+  display: none;
+}
 .designMain {
   margin-top: 10px;
   text-align: center;
@@ -346,6 +356,15 @@ body {
 .designMain img {
   width: 100%;
   max-width: 900px;
+  margin-bottom: 20px;
+}
+.designMainText {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.designMainText span {
+  color: var(--accent-color);
 }
 
 /* 自分について */
@@ -495,6 +514,26 @@ body {
 
 /* レスポンシブ */
 @media screen and (max-width: 999px) {
+  .title {
+    margin-bottom: 50px;
+    padding-left: 80px;
+    font-size: x-large;
+    letter-spacing: 0.2em;
+  }
+  .title::before {
+    width: 70px;
+    left: 0;
+  }
+  .h3 {
+    font-size: large;
+  }
+  .text {
+    font-size: medium;
+  }
+  .omake {
+    font-size: x-small;
+  }
+
   .menuBtn {
     display: inline-block;
   }
@@ -533,19 +572,6 @@ body {
   }
   #mainText {
     font-size: 10vw;
-  }
-  .title {
-    margin-bottom: 50px;
-    padding-left: 80px;
-    font-size: 1.7em;
-    letter-spacing: 0.2em;
-  }
-  .title::before {
-    width: 70px;
-    left: 0;
-  }
-  .text {
-    font-size: 14px;
   }
   .web {
     flex-wrap: wrap;

@@ -319,12 +319,12 @@ designList.forEach((designList) => {
 // ウェブサイトリスト
 function inWeb(web) {
   // タグ追加
-  const divWeb = document.createElement('div');
+  const divWeb = document.createElement('a');
   const webEyecatch = document.createElement('div');
   const webText = document.createElement('div');
   const img = document.createElement('img');
   const title = document.createElement('h3');
-  const tag = document.createElement('p');
+  const tag = document.createElement('span');
   const tool = document.createElement('p');
   const concept = document.createElement('p');
   const time = document.createElement('p');
@@ -338,25 +338,26 @@ function inWeb(web) {
   webText.classList.add("webText");
   title.classList.add("h3");
   tag.classList.add("text");
-  tool.classList.add("text");
+  tool.classList.add("text", "omake");
+  time.classList.add("text", "omake");
   concept.classList.add("text");
-  time.classList.add("text");
 
   title.textContent = web['title'];
-  tag.textContent = web['tag'];
+  tag.textContent = '#' + web['tag'];
   tool.textContent = web['tool'];
+  time.textContent = '制作期間：' + web['time'];
   concept.textContent = web['concept'];
-  time.textContent = web['time'];
 
   // DOM追加
+  // divWeb.appendChild(a);
   divWeb.appendChild(webEyecatch);
   webEyecatch.appendChild(img);
   divWeb.appendChild(webText);
-  webText.appendChild(title);
   webText.appendChild(tag);
+  webText.appendChild(title);
   webText.appendChild(tool);
-  webText.appendChild(concept);
   webText.appendChild(time);
+  webText.appendChild(concept);
 
   webSpace.appendChild(divWeb);
   // console.log(divWeb);
@@ -370,7 +371,7 @@ function inDesign(design) {
   const designText = document.createElement('div');
   const img = document.createElement('img');
   const title = document.createElement('h3');
-  const tag = document.createElement('p');
+  const tag = document.createElement('span');
   const tool = document.createElement('p');
   const concept = document.createElement('p');
   const time = document.createElement('p');
@@ -381,28 +382,28 @@ function inDesign(design) {
   designImage.classList.add("designImage");
   img.setAttribute('src', imgsrc);
   img.setAttribute('alt', design['title']);
-  designText.classList.add("webText");
+  designText.classList.add("designText");
   title.classList.add("h3");
   tag.classList.add("text");
-  tool.classList.add("text");
+  tool.classList.add("text", ".omake");
+  time.classList.add("text", ".omake");
   concept.classList.add("text");
-  time.classList.add("text");
 
-  // title.textContent = design['title'];
-  // tag.textContent = design['tag'];
-  // tool.textContent = design['tool'];
-  // concept.textContent = design['concept'];
-  // time.textContent = design['time'];
+  title.textContent = design['title'];
+  tag.textContent = '#' + design['tag'];
+  tool.textContent = design['tool'];
+  concept.textContent = design['concept'];
+  time.textContent = design['time'];
 
   // DOM追加
   divDesign.appendChild(designImage);
   designImage.appendChild(img);
   divDesign.appendChild(designText);
-  // webText.appendChild(title);
-  // webText.appendChild(tag);
-  // webText.appendChild(tool);
-  // webText.appendChild(concept);
-  // webText.appendChild(time);
+  designText.appendChild(tag);
+  designText.appendChild(title);
+  designText.appendChild(tool);
+  designText.appendChild(time);
+  designText.appendChild(concept);
 
   designSpace.appendChild(divDesign);
   // console.log(divDesign);
@@ -414,12 +415,33 @@ function inDesign(design) {
 ================================================ */
 const designMain = document.querySelector('.designMain img');
 const designImage = document.querySelectorAll('.designImage img');
+const designMainText = document.querySelector('.designMainText');
+const designText = document.querySelectorAll('.designText');
+
+const designS = document.querySelectorAll('.design');
+const designM = document.querySelectorAll('.designMain');
+
 
 designImage.forEach((designImage) => {
+  console.log(designImage);
   designImage.addEventListener('mouseover', (event) => {
     designMain.src = event.target.src;
     designMain.animate({opacity: [0, 1]}, 500);
   });
+});
+
+
+designS.forEach((element) => {
+  const design = element.querySelector('.designImage img');
+  const text = element.querySelector('.designText');
+  console.log(design);
+  console.log(text);
+
+  // console.log(text);
+  // image.addEventListener('mouseover', (event) => {
+  //   designMain.src = event.target.src;
+  //   designMain.animate({opacity: [0, 1]}, 500);
+  // });
 });
 
 /*
@@ -445,15 +467,15 @@ function inSkill(skill) {
   const level = document.createElement('p');
 
   // 要素追加
-  divSkill.classList.add("skill");
+  divSkill.classList.add("skill", "fadein");
   circleBase.classList.add("base");
-  circleBase.setAttribute('cx', "100");
-  circleBase.setAttribute('cy', "100");
-  circleBase.setAttribute('r', "80");
+  // circleBase.setAttribute('cx', "100");
+  // circleBase.setAttribute('cy', "100");
+  // circleBase.setAttribute('r', "80");
   circleLine.classList.add("line", `lineSkill${skill['level']}`);
-  circleLine.setAttribute('cx', "100");
-  circleLine.setAttribute('cy', "100");
-  circleLine.setAttribute('r', "80");
+  // circleLine.setAttribute('cx', "100");
+  // circleLine.setAttribute('cy', "100");
+  // circleLine.setAttribute('r', "80");
   skillLevel.classList.add("skillLevel");
   skillTitle.classList.add("skillTitle");
 
@@ -471,10 +493,11 @@ function inSkill(skill) {
   skillTitle.appendChild(title);
   level.appendChild(span);
 
-  skillSpace.appendChild(divSkill);
-  console.log(divSkill);
+  // skillSpace.appendChild(divSkill);
+  // console.log(divSkill);
 };
 
+// 動きを付与する
 const animateLine = (entries, obs) => {
   entries.forEach((entry) => {
     // console.log(entry);
