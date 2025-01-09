@@ -7,9 +7,9 @@ const designList = [
     title: "由良李海月のポートフォリオ",
     img: "24877818.png",
     tag: "website",
-    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+    tool: "VSCode/Github/Cloudflare",
     concept: "今見てるこのサイト。これからどんどんリニューアルするよ！",
-    time: "3時間",
+    time: "1ヶ月",
   },
   {
     title: "タイトル",
@@ -19,40 +19,43 @@ const designList = [
     time: "3時間",
     concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
   },
+  // {
+  //   title: "タイトル",
+  //   img: "24877818.png",
+  //   tag: "website",
+  //   tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+  //   time: "3時間",
+  //   concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  // },
+  // {
+  //   title: "タイトル",
+  //   img: "24877818.png",
+  //   tag: "website",
+  //   tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+  //   time: "3時間",
+  //   concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  // },
+  // {
+  //   title: "タイトル",
+  //   img: "24877818.png",
+  //   tag: "website",
+  //   tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+  //   time: "3時間",
+  //   concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+  // },
   {
-    title: "タイトル",
-    img: "24877818.png",
-    tag: "website",
-    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
-    time: "3時間",
-    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
-  },
-  {
-    title: "タイトル",
-    img: "24877818.png",
-    tag: "website",
-    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
-    time: "3時間",
-    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
-  },
-  {
-    title: "タイトル",
-    img: "24877818.png",
-    tag: "website",
-    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
-    time: "3時間",
-    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
-  },
-  {
-    title: "バナー",
+    title: "バナー1",
     img: "banner_image1.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `
+              コンセプトをここに書く。
+              イメージは●●
+             `,
   },
   {
-    title: "バナー",
+    title: "バナー2",
     img: "banner_image2.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -60,7 +63,7 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "バナー3",
     img: "banner_image3.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -68,7 +71,7 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "バナー4",
     img: "banner_image4.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -76,7 +79,7 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "バナー5",
     img: "banner_image5.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -84,7 +87,23 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "くらヒレとめんだこ",
+    img: "kurahire1.png",
+    tag: "illustration",
+    tool: "CLIP STUDIO",
+    time: "12時間",
+    concept: "VTuberのキャラクターと仲良くしているめんだこのツーショット。",
+  },
+  {
+    title: "ミニデビとミニジェル",
+    img: "minis.png",
+    tag: "illustration",
+    tool: "CLIP STUDIO",
+    time: "1時間",
+    concept: "メイトナリーのキャラクター。ユーピア（種族名）の遣い。",
+  },
+  {
+    title: "バナー6",
     img: "banner_image6.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -92,7 +111,7 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "バナー7",
     img: "banner_image7.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -100,7 +119,7 @@ const designList = [
     concept: "コンセプトをここに書く。",
   },
   {
-    title: "バナー",
+    title: "バナー8",
     img: "banner_image8.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
@@ -293,8 +312,7 @@ menuBtn.addEventListener("click", () => {
   // menuBack.animate({translate: ['100vw', 0]}, menuOptions);
 });
 
-console.log(window.innerWidth);
-
+// 横幅が一定数いくとクラスを削除
 if (window.innerWidth <= 1000) {
   console.log(window.innerWidth);
   activeDel.forEach(() => {
@@ -409,39 +427,41 @@ function inDesign(design) {
   // console.log(divDesign);
 };
 
-
 /*
 デザインギャラリー
 ================================================ */
-const designMain = document.querySelector('.designMain img');
-const designImage = document.querySelectorAll('.designImage img');
-const designMainText = document.querySelector('.designMainText');
-const designText = document.querySelectorAll('.designText');
-
 const designS = document.querySelectorAll('.design');
-const designM = document.querySelectorAll('.designMain');
+const designM = document.querySelector('.designMain');
 
+const designMainImg = designM.querySelector('img');
+const designMainSpan = designM.querySelector('span');
+const designMainH3 = designM.querySelector('h3');
+const designMainText = designM.querySelectorAll('p');
 
-designImage.forEach((designImage) => {
-  console.log(designImage);
-  designImage.addEventListener('mouseover', (event) => {
-    designMain.src = event.target.src;
-    designMain.animate({opacity: [0, 1]}, 500);
-  });
-});
+// 初期設定
+designMainSpan.textContent = designS[0].querySelector('span').textContent;
+designMainH3.textContent = designS[0].querySelector('h3').textContent;
+designMainText[0].textContent = designS[0].querySelectorAll('p')[0].textContent;
+designMainText[1].textContent = designS[0].querySelectorAll('p')[1].textContent;
+designMainText[2].textContent = designS[0].querySelectorAll('p')[2].textContent;
+designMainImg.src = designS[0].querySelector('img').src;
 
-
+// メイン画像を変更する
 designS.forEach((element) => {
   const design = element.querySelector('.designImage img');
-  const text = element.querySelector('.designText');
-  console.log(design);
-  console.log(text);
+  const span = element.querySelector('.designText span');
+  const h3 = element.querySelector('.designText h3');
+  const text = element.querySelectorAll('.designText p');
 
-  // console.log(text);
-  // image.addEventListener('mouseover', (event) => {
-  //   designMain.src = event.target.src;
-  //   designMain.animate({opacity: [0, 1]}, 500);
-  // });
+  design.addEventListener('mouseover', (event) => {
+    designMainSpan.textContent = span.textContent;
+    designMainH3.textContent = h3.textContent;
+    designMainText[0].textContent = text[0].textContent;
+    designMainText[1].textContent = text[1].textContent;
+    designMainText[2].textContent = text[2].textContent;
+    designMainImg.src = event.target.src;
+    designMainImg.animate({opacity: [0, 1]}, 500);
+  });
 });
 
 /*
@@ -469,13 +489,7 @@ function inSkill(skill) {
   // 要素追加
   divSkill.classList.add("skill", "fadein");
   circleBase.classList.add("base");
-  // circleBase.setAttribute('cx', "100");
-  // circleBase.setAttribute('cy', "100");
-  // circleBase.setAttribute('r', "80");
   circleLine.classList.add("line", `lineSkill${skill['level']}`);
-  // circleLine.setAttribute('cx', "100");
-  // circleLine.setAttribute('cy', "100");
-  // circleLine.setAttribute('r', "80");
   skillLevel.classList.add("skillLevel");
   skillTitle.classList.add("skillTitle");
 
@@ -493,8 +507,8 @@ function inSkill(skill) {
   skillTitle.appendChild(title);
   level.appendChild(span);
 
-  // skillSpace.appendChild(divSkill);
-  // console.log(divSkill);
+  skillSpace.appendChild(divSkill);
+  console.log(divSkill);
 };
 
 // 動きを付与する
@@ -526,8 +540,8 @@ const animateFade = (entries, obs) => {
       entry.target.animate(
         {
           opacity: [0, 1],
-          filter: ['blur(.4rem)', 'blur(0)'],
-          translate: ['0 3rem', 0],
+          filter: ['blur(.1rem)', 'blur(0)'],
+          translate: ['0 4rem', 0],
           // rotate: ['z 5deg', 0],
         },
         {

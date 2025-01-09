@@ -47,9 +47,6 @@ body {
   padding: 0 20px;
 }
 
-
-
-
 /* マウスストーカー */
 #mouseStalker {
   position: fixed;
@@ -60,6 +57,7 @@ body {
   pointer-events: none;
   transition: all 0.3s ease-out;
   mix-blend-mode: difference;
+  display: none;
 }
 #mouseStalkerImg {
   width: 60px;
@@ -265,6 +263,8 @@ body {
   transform: translate(-50%, -50%);
   color: var(--base-color);
   text-shadow: 2px 2px 5px var(--text-color);
+}
+#mainText h1 {
   font-size: 5vw;
   margin: 0;
 }
@@ -274,6 +274,9 @@ body {
   50% {filter:hue-rotate(180deg);}
   75% {filter:hue-rotate(270deg);}
   100% {filter:hue-rotate(360deg);}
+}
+.headerWave {
+  /* position: fixed; */
 }
 
 /* ウェブサイト */
@@ -302,7 +305,6 @@ body {
   color: var(--accent-color);
   font-size: small;
 }
-
 
 /* デザイン */
 #designWorks {
@@ -355,8 +357,13 @@ body {
 }
 .designMain img {
   width: 100%;
+  height: 50%;
+  /* height: 60vh; */
   max-width: 900px;
+  /* max-height: 60vh; */
   margin-bottom: 20px;
+  object-fit: cover;
+  /* aspect-ratio: auto; */
 }
 .designMainText {
   width: 100%;
@@ -398,6 +405,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* flex-direction: column-reverse; */
 }
 .skill {
   position: relative;
@@ -474,7 +482,6 @@ body {
 .skillTitle p {
   margin-top: 0;
 }
-
 @keyframes circleAnim {
   0% {
     stroke-dasharray: 0 502;
@@ -482,6 +489,35 @@ body {
   100%, to {
     stroke-dasharray: 502 502;
   }
+}
+/* ツールチップ */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* z-index: 1; */
+}
+.tooltipText {
+  /* visibility: hidden; */
+  width: 200px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 6px;
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  border: dashed 2px white;
+  box-shadow: 0px 0px 0px 6px var(--main-color);
+  position: absolute;
+  /* opacity: 0; */
+  z-index: 5;
+  /* bottom: 90%; */
+  top: 90%;
+  left: 25%;
+  margin-left: -60px;
+}
+.tooltip:hover .tooltipText {
+  /* visibility: visible; */
+  z-index: 5;
+  opacity: 1;
 }
 
 /* フッター波 */
@@ -570,8 +606,11 @@ body {
     margin-bottom: 15px;
     text-align: center;
   }
-  #mainText {
+  #mainText h1 {
     font-size: 10vw;
+  }
+  #mainText p {
+    font-size: 3vw;
   }
   .web {
     flex-wrap: wrap;
@@ -590,10 +629,7 @@ body {
 
 /* ホバーアクションをPCだけにしたい場合、←のメディアクエリで囲む */
 @media (hover: hover) and (pointer: fine) {
-  a:hover {
-    /* opacity: 0.7 */
-  }
   #mouseStalker {
-    /* display: none; */
+    display: block;
   }
 }
