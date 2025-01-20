@@ -355,10 +355,8 @@ function inWeb(web) {
   img.setAttribute('alt', web['title']);
   webText.classList.add("webText");
   title.classList.add("h3");
-  tag.classList.add("text");
-  tool.classList.add("text", "omake");
-  time.classList.add("text", "omake");
-  concept.classList.add("text");
+  tool.classList.add("omake");
+  time.classList.add("omake");
 
   title.textContent = web['title'];
   tag.textContent = '#' + web['tag'];
@@ -402,10 +400,8 @@ function inDesign(design) {
   img.setAttribute('alt', design['title']);
   designText.classList.add("designText");
   title.classList.add("h3");
-  tag.classList.add("text");
-  tool.classList.add("text", ".omake");
-  time.classList.add("text", ".omake");
-  concept.classList.add("text");
+  tool.classList.add(".omake");
+  time.classList.add(".omake");
 
   title.textContent = design['title'];
   tag.textContent = '#' + design['tag'];
@@ -475,19 +471,25 @@ skillList.forEach((skillList) => {
 
 // ウェブサイトリスト
 function inSkill(skill) {
+
+  const SVG_NS = "http://www.w3.org/2000/svg";
+
   // タグ追加
   const divSkill = document.createElement('div');
   const skillLevel = document.createElement('div');
   const skillTitle = document.createElement('div');
-  const circleBase = document.createElement('circle');
-  const circleLine = document.createElement('circle');
-  const svg = document.createElement('svg');
+  const circleBase = document.createElementNS(SVG_NS,'circle');
+  const circleLine = document.createElementNS(SVG_NS,'circle');
+  const svg = document.createElementNS(SVG_NS,"svg")
+  // const circleBase = document.createElement('circle');
+  // const circleLine = document.createElement('circle');
+  // const svg = document.createElement('svg');
   const span = document.createElement('span');
   const title = document.createElement('p');
   const level = document.createElement('p');
 
   // 要素追加
-  divSkill.classList.add("skill", "fadein");
+  divSkill.classList.add("skill", "tooltip", "fadein");
   circleBase.classList.add("base");
   circleLine.classList.add("line", `lineSkill${skill['level']}`);
   skillLevel.classList.add("skillLevel");
