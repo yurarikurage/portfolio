@@ -8,8 +8,9 @@ const designList = [
     img: "24877818.png",
     tag: "website",
     tool: "VSCode/Github/Cloudflare",
-    concept: "今見てるこのサイト。これからどんどんリニューアルするよ！",
     time: "1ヶ月",
+    concept: `今見てるこのサイト。
+              これからどんどんリニューアルするよ！`,
   },
   {
     title: "タイトル",
@@ -17,7 +18,7 @@ const designList = [
     tag: "website",
     tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
     time: "3時間",
-    concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
+    concept: `簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明`,
   },
   // {
   //   title: "タイトル",
@@ -49,10 +50,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: `
-              コンセプトをここに書く。
-              イメージは●●
-             `,
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー2",
@@ -60,7 +59,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー3",
@@ -68,7 +68,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー4",
@@ -76,7 +77,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー5",
@@ -84,7 +86,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "くらヒレとめんだこ",
@@ -92,7 +95,7 @@ const designList = [
     tag: "illustration",
     tool: "CLIP STUDIO",
     time: "12時間",
-    concept: "VTuberのキャラクターと仲良くしているめんだこのツーショット。",
+    concept: `VTuberのキャラクターと仲良くしているめんだこのツーショット。`,
   },
   {
     title: "ミニデビとミニジェル",
@@ -100,15 +103,17 @@ const designList = [
     tag: "illustration",
     tool: "CLIP STUDIO",
     time: "1時間",
-    concept: "メイトナリーのキャラクター。ユーピア（種族名）の遣い。",
-  },
+    concept: `メイトナリーのキャラクター。
+              ユーピア（種族名）の遣い。`,
+},
   {
     title: "バナー6",
     img: "banner_image6.jpg",
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `「●●（本の名前）」を模写してさんこうコンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー7",
@@ -116,7 +121,8 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
   {
     title: "バナー8",
@@ -124,35 +130,75 @@ const designList = [
     tag: "banner",
     tool: "Photoshop/illustrator/CLIP STUDIO",
     time: "3時間",
-    concept: "コンセプトをここに書く。",
+    concept: `コンセプトをここに書く。
+              イメージは●●`,
   },
 ];
 
 // スキル一覧
 const skillList = [
   {
-    title: "Webサイト",
+    title: "Webデザイン",
+    level: "30",
+    detail: `Webサイトを作成するうえで、目的や要望に沿って作成するよう心がけてます。
+            ページ階層をツリー状の図にして、大まかなデザインのラフを作成します。
+            Adobe XD（やFigma）を使用した簡単なデザインカンプを作成します。`,
+  },
+  {
+    title: "コーディング",
     level: "70",
+    detail: `HTML・CSSを使用し、デザインカンプを正しく再現します。
+            Javascriptを使用し、アニメーションなどサイトに簡単な動きを加えることも可能です。
+            タグの配置、命名規則など見やすいコーディングを目指しています。
+            使用しているエディターはVisual Studio Codeです。
+            業務経験があります。`,
   },
   {
     title: "Photoshop",
     level: "60",
+    detail: `写真や画像の色調補正やレタッチ、合成ができます。
+            バナーやポスター、サムネなど作成できます。`,
   },
   {
-    title: "illustrator",
+    title: "Illustration",
     level: "50",
+    detail: `ロゴや簡単なイラスト、名刺、図など作成できます。
+            文字や図形が多めなバナーやポスター、サムネなど作成できます。`,
   },
   {
     title: "Word",
     level: "90",
+    detail: `報告書や企画書、見積書、送付状などの社内外向けのビジネス文書を作成可能です。
+            データや図を挿入した見やすい資料を作成します。
+            テンプレートや宛名リストの差し込みを使用し、作業効率化をします。
+            業務経験があります。`,
   },
   {
     title: "Excel",
     level: "90",
+    detail: `リストやグラフの作成、ピボットテーブルを使用したデータ分析が可能です。
+            SUM、AVERAGE、VLOOKUPなどの関数が使用可能です。
+            簡易なマクロ作成ができます。
+            業務経験があります。`,
   },
   {
     title: "PowerPoint",
     level: "90",
+    detail: `プレゼンテーションや提案資料の作成できます。
+            アニメーション効果やデザイン設定が可能です。`,
+  },
+  {
+    title: "イラストレーション",
+    level: "70",
+    detail: `2頭身～5頭身のキャラクターを描くのが得意です。
+            人間以外のキャラクターや無機物も描けます。
+            SNSなどのアイコン作成やゲームなどの立ち絵も描くことが可能です。`,
+  },
+  {
+    title: "動画編集",
+    level: "70",
+    detail: `数分の動画から長時間の動画編集が可能です。
+            カット、字幕、効果音、BGMなど視聴者に飽きさせない見やすい動画制作をしています。`,
   },
 ];
 
@@ -354,7 +400,6 @@ function inWeb(web) {
   img.setAttribute('src', imgsrc);
   img.setAttribute('alt', web['title']);
   webText.classList.add("webText");
-  title.classList.add("h3");
   tool.classList.add("omake");
   time.classList.add("omake");
 
@@ -362,7 +407,7 @@ function inWeb(web) {
   tag.textContent = '#' + web['tag'];
   tool.textContent = web['tool'];
   time.textContent = '制作期間：' + web['time'];
-  concept.textContent = web['concept'];
+  concept.innerHTML = web['concept'].replace(/\n/g, `<br>`);
 
   // DOM追加
   // divWeb.appendChild(a);
@@ -399,7 +444,6 @@ function inDesign(design) {
   img.setAttribute('src', imgsrc);
   img.setAttribute('alt', design['title']);
   designText.classList.add("designText");
-  title.classList.add("h3");
   tool.classList.add(".omake");
   time.classList.add(".omake");
 
@@ -439,7 +483,7 @@ designMainSpan.textContent = designS[0].querySelector('span').textContent;
 designMainH3.textContent = designS[0].querySelector('h3').textContent;
 designMainText[0].textContent = designS[0].querySelectorAll('p')[0].textContent;
 designMainText[1].textContent = designS[0].querySelectorAll('p')[1].textContent;
-designMainText[2].textContent = designS[0].querySelectorAll('p')[2].textContent;
+designMainText[2].innerHTML = designS[0].querySelectorAll('p')[2].textContent.replace(/\n/g, `<br>`);
 designMainImg.src = designS[0].querySelector('img').src;
 
 // メイン画像を変更する
@@ -454,7 +498,7 @@ designS.forEach((element) => {
     designMainH3.textContent = h3.textContent;
     designMainText[0].textContent = text[0].textContent;
     designMainText[1].textContent = text[1].textContent;
-    designMainText[2].textContent = text[2].textContent;
+    designMainText[2].innerHTML = text[2].textContent.replace(/\n/g, `<br>`);
     designMainImg.src = event.target.src;
     designMainImg.animate({opacity: [0, 1]}, 500);
   });
@@ -481,23 +525,23 @@ function inSkill(skill) {
   const circleBase = document.createElementNS(SVG_NS,'circle');
   const circleLine = document.createElementNS(SVG_NS,'circle');
   const svg = document.createElementNS(SVG_NS,"svg")
-  // const circleBase = document.createElement('circle');
-  // const circleLine = document.createElement('circle');
-  // const svg = document.createElement('svg');
   const span = document.createElement('span');
   const title = document.createElement('p');
   const level = document.createElement('p');
+  const tooltipText = document.createElement('span');
 
   // 要素追加
-  divSkill.classList.add("skill", "tooltip", "fadein");
+  divSkill.classList.add("skill", "tooltip");
   circleBase.classList.add("base");
   circleLine.classList.add("line", `lineSkill${skill['level']}`);
   skillLevel.classList.add("skillLevel");
   skillTitle.classList.add("skillTitle");
+  tooltipText.classList.add("tooltipText");
 
   title.textContent = skill['title'];
   level.textContent = skill['level'];
   span.textContent = "%";
+  tooltipText.innerHTML = skill['detail'].replace(/\n/g, `<br>`);
 
   // DOM追加
   divSkill.appendChild(svg);
@@ -508,9 +552,10 @@ function inSkill(skill) {
   skillLevel.appendChild(level);
   skillTitle.appendChild(title);
   level.appendChild(span);
+  divSkill.appendChild(tooltipText);
 
   skillSpace.appendChild(divSkill);
-  console.log(divSkill);
+  // console.log(divSkill);
 };
 
 // 動きを付与する
@@ -547,7 +592,7 @@ const animateFade = (entries, obs) => {
           // rotate: ['z 5deg', 0],
         },
         {
-          duration: 1200,
+          duration: 1500,
           easing: 'ease',
           fill: 'forwards',
         }
