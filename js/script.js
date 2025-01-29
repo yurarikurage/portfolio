@@ -45,49 +45,50 @@ const designList = [
   //   concept: "簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明",
   // },
   {
-    title: "バナー1",
+    title: "アンドロイドオンライン1",
     img: "banner_image1.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop",
     time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    concept: `架空ゲームの新作紹介バナーです。オンラインゲームの世界観を分かるデザインを心がけました。
+              アンドロイドと少女の関係が気になるワクワク感をイメージしました。`,
   },
   {
-    title: "バナー2",
+    title: "アンドロイドオンライン2",
     img: "banner_image2.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop",
     time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    concept: `架空ゲームの新作紹介バナーです。オンラインゲームの世界観を分かるデザインを心がけました。
+              プレイヤーが自由な選択を行えることを分かりやすくと楽しさをイメージしています。`,
   },
   {
-    title: "バナー3",
+    title: "アンドロイドオンライン3",
     img: "banner_image3.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop",
     time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    concept: `架空ゲームの新作紹介バナーです。オンラインゲームの世界観を分かるデザインを心がけました。
+              ロボットの無機質感と少女は一体どういう存在なのかという興味を引くようにしました。`,
   },
   {
-    title: "バナー4",
+    title: "SpringSALE 春部屋フェス",
     img: "banner_image4.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
-    time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    tool: "Photoshop/illustrator",
+    time: "5時間",
+    concept: `架空インテリアショップの春セールバナーです。
+              色合いを春色に揃えています。インテリアの広告なので部屋をイメージしています。`,
   },
   {
-    title: "バナー5",
+    title: "秋物続々！おとな＆こどもすぎないオシャレ",
     img: "banner_image5.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
-    time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    tool: "Photoshop",
+    time: "12時間",
+    concept: `架空アパレルショップの秋セールバナーです。
+              色合いを秋色に揃えています。キャッチフレーズの「おとな＆こどもすぎない」をイメージしたイラストを使用しました。
+              また、ターゲットの女性層が気になるような骨格とパーソナルカラーの無料診断でクリック率を高めようとしています。`,
   },
   {
     title: "くらヒレとめんだこ",
@@ -95,7 +96,8 @@ const designList = [
     tag: "illustration",
     tool: "CLIP STUDIO",
     time: "12時間",
-    concept: `VTuberのキャラクターと仲良くしているめんだこのツーショット。`,
+    concept: `VTuberのくらヒレというキャラクターと仲良くしているめんだこのひいろのツーショット。
+              3頭身で描かれています。`,
   },
   {
     title: "ミニデビとミニジェル",
@@ -103,35 +105,35 @@ const designList = [
     tag: "illustration",
     tool: "CLIP STUDIO",
     time: "1時間",
-    concept: `メイトナリーのキャラクター。
-              ユーピア（種族名）の遣い。`,
+    concept: `メイトナリーのキャラクター。ユーピア（種族名）の遣い。
+              ネコのようなミニデビとクマのようなミニジェル。`,
 },
   {
-    title: "バナー6",
+    title: "バナー1",
     img: "banner_image6.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop/illustrator",
     time: "3時間",
-    concept: `「●●（本の名前）」を模写してさんこうコンセプトをここに書く。
-              イメージは●●`,
+    concept: `「15分でOKに！ バナーデザインはかどり事典」を模写しました。
+              操作がまだつたないので時間がかかりました。`,
   },
   {
-    title: "バナー7",
+    title: "バナー2",
     img: "banner_image7.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop/illustrator",
     time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    concept: `「15分でOKに！ バナーデザインはかどり事典」を模写しました。
+              人の切り抜きが初めてで、髪の毛の部分が一番大変でした。`,
   },
   {
-    title: "バナー8",
+    title: "バナー3",
     img: "banner_image8.jpg",
     tag: "banner",
-    tool: "Photoshop/illustrator/CLIP STUDIO",
+    tool: "Photoshop/illustrator",
     time: "3時間",
-    concept: `コンセプトをここに書く。
-              イメージは●●`,
+    concept: `「15分でOKに！ バナーデザインはかどり事典」を模写しました。
+              色のバランスを考えることが難しかったです。`,
   },
 ];
 
@@ -141,64 +143,64 @@ const skillList = [
     title: "Webデザイン",
     level: "30",
     detail: `Webサイトを作成するうえで、目的や要望に沿って作成するよう心がけてます。
-            ページ階層をツリー状の図にして、大まかなデザインのラフを作成します。
-            Adobe XD（やFigma）を使用した簡単なデザインカンプを作成します。`,
+             ページ階層をツリー状の図にして、大まかなデザインのラフを作成します。
+             Adobe XD（やFigma）を使用した簡単なデザインカンプを作成します。`,
   },
   {
     title: "コーディング",
     level: "70",
     detail: `HTML・CSSを使用し、デザインカンプを正しく再現します。
-            Javascriptを使用し、アニメーションなどサイトに簡単な動きを加えることも可能です。
-            タグの配置、命名規則など見やすいコーディングを目指しています。
-            使用しているエディターはVisual Studio Codeです。
-            業務経験があります。`,
+             Javascriptを使用し、アニメーションなどサイトに簡単な動きを加えることも可能です。
+             タグの配置、命名規則など見やすいコーディングを目指しています。
+             使用しているエディターはVisual Studio Codeです。
+             業務経験があります。`,
   },
   {
     title: "Photoshop",
     level: "60",
     detail: `写真や画像の色調補正やレタッチ、合成ができます。
-            バナーやポスター、サムネなど作成できます。`,
+             バナーやポスター、サムネなど作成できます。`,
   },
   {
     title: "Illustration",
     level: "50",
     detail: `ロゴや簡単なイラスト、名刺、図など作成できます。
-            文字や図形が多めなバナーやポスター、サムネなど作成できます。`,
+             文字や図形が多めなバナーやポスター、サムネなど作成できます。`,
   },
   {
     title: "Word",
     level: "90",
     detail: `報告書や企画書、見積書、送付状などの社内外向けのビジネス文書を作成可能です。
-            データや図を挿入した見やすい資料を作成します。
-            テンプレートや宛名リストの差し込みを使用し、作業効率化をします。
-            業務経験があります。`,
+             データや図を挿入した見やすい資料を作成します。
+             テンプレートや宛名リストの差し込みを使用し、作業効率化をします。
+             業務経験があります。`,
   },
   {
     title: "Excel",
     level: "90",
     detail: `リストやグラフの作成、ピボットテーブルを使用したデータ分析が可能です。
-            SUM、AVERAGE、VLOOKUPなどの関数が使用可能です。
-            簡易なマクロ作成ができます。
-            業務経験があります。`,
+             SUM、AVERAGE、VLOOKUPなどの関数が使用可能です。
+             簡易なマクロ作成ができます。
+             業務経験があります。`,
   },
   {
     title: "PowerPoint",
     level: "90",
     detail: `プレゼンテーションや提案資料の作成できます。
-            アニメーション効果やデザイン設定が可能です。`,
+             アニメーション効果やデザイン設定が可能です。`,
   },
   {
     title: "イラストレーション",
     level: "70",
     detail: `2頭身～5頭身のキャラクターを描くのが得意です。
-            人間以外のキャラクターや無機物も描けます。
-            SNSなどのアイコン作成やゲームなどの立ち絵も描くことが可能です。`,
+             人間以外のキャラクターや無機物も描けます。
+             SNSなどのアイコン作成やゲームなどの立ち絵も描くことが可能です。`,
   },
   {
     title: "動画編集",
     level: "70",
     detail: `数分の動画から長時間の動画編集が可能です。
-            カット、字幕、効果音、BGMなど視聴者に飽きさせない見やすい動画制作をしています。`,
+             カット、字幕、効果音、BGMなど視聴者に飽きさせない見やすい動画制作をしています。`,
   },
 ];
 

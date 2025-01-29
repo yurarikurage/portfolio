@@ -583,6 +583,9 @@ span {
     display: none;
     opacity: 0;
   }
+  #nav li a {
+    font-size: clamp(30px, 6vw, 50px);
+  }
   #nav.active {
     position: fixed;
     display: flex;
@@ -602,12 +605,12 @@ span {
     flex-flow: column;
     align-items: center;
     text-wrap: nowrap;
-    font-size: 2rem;
   }
   #nav.active ul li {
     width: auto;
     margin-bottom: 15px;
     text-align: center;
+    font-size: 23px;
   }
   .web {
     flex-wrap: wrap;
