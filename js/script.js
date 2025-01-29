@@ -12,14 +12,14 @@ const designList = [
     concept: `今見てるこのサイト。
               これからどんどんリニューアルするよ！`,
   },
-  {
-    title: "タイトル",
-    img: "24877818.png",
-    tag: "website",
-    tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
-    time: "3時間",
-    concept: `簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明`,
-  },
+  // {
+  //   title: "タイトル",
+  //   img: "24877818.png",
+  //   tag: "website",
+  //   tool: "VSCode/Figma/Adobe XD/WordPress/Github/Cloudflare",
+  //   time: "3時間",
+  //   concept: `簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明簡単な説明`,
+  // },
   // {
   //   title: "タイトル",
   //   img: "24877818.png",
@@ -228,9 +228,9 @@ const snsList = [
   },
 ];
 
-console.log(designList);
-console.log(skillList);
-console.log(snsList);
+// console.log(designList);
+// console.log(skillList);
+// console.log(snsList);
 
 /*
 マウスストーカー
